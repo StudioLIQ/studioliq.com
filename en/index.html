@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Language routing: Korea (Asia/Seoul timezone or Korean browser) -> /, everyone else -> /en/ -->
+  <script>
+    (function () {
+      if (/bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(navigator.userAgent)) return;
+      var page = document.documentElement.lang === "ko" ? "ko" : "en", want;
+      try { want = localStorage.getItem("lang"); } catch (e) {}
+      if (want !== "ko" && want !== "en") {
+        var tz = "";
+        try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) {}
+        var first = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+        want = tz === "Asia/Seoul" || /^ko\b/i.test(first) ? "ko" : "en";
+      }
+      if (want !== page) location.replace((want === "ko" ? "/" : "/en/") + location.hash);
+    })();
+  </script>
+  <title>Studio LIQ · AI Native Builder Company | AX, AI &amp; IT Consulting and Product Builds</title>
+  <meta name="description" content="Studio LIQ is an AI-native builder company. One team covers everything from AX, AI and IT consulting to web and app builds, social media automation, and Web3 protocol development." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://studioliq.com/en/" />
+  <link rel="alternate" hreflang="ko" href="https://studioliq.com/" />
+  <link rel="alternate" hreflang="en" href="https://studioliq.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://studioliq.com/en/" />
+  <meta name="author" content="Studio LIQ" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Studio LIQ" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:url" content="https://studioliq.com/en/" />
+  <meta property="og:title" content="Studio LIQ · Building AI-native products and onchain finance" />
+  <meta property="og:description" content="From AX, AI and IT consulting to a shipped product, one team sees it through." />
+  <meta property="og:image" content="https://studioliq.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Studio LIQ · Building AI-native products and onchain finance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Studio LIQ · Building AI-native products and onchain finance" />
+  <meta name="twitter:description" content="From AX, AI and IT consulting to a shipped product, one team sees it through." />
+  <meta name="twitter:image" content="https://studioliq.com/assets/brand/og-image.png" />
+
+  <link rel="icon" href="/assets/brand/studioliq-logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/assets/brand/studioliq-logo.png" />
+  <link rel="alternate" type="text/plain" title="LLM summary" href="/llms.txt" />
+
+  <!-- Google Analytics 4 (studioliq.com only) -->
+  <script>
+    window.GA_ID = "G-ZWL77X18QN";
+    (function () {
+      var id = window.GA_ID;
+      if (!/^G-[A-Z0-9]{6,}$/.test(id) || id === "G-XXXXXXXXXX") return;
+      if (!/(^|\.)studioliq\.com$/.test(location.hostname)) return; // production only
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag("js", new Date());
+      gtag("config", id, { anonymize_ip: true });
+    })();
+  </script>
+
+  <!-- Structured data (schema.org). The organization itself is described on the Korean page (#org). -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://studioliq.com/en/#webpage",
+        "url": "https://studioliq.com/en/",
+        "name": "Studio LIQ · AI Native Builder Company",
+        "description": "AI-native builder company covering AX, AI and IT consulting, web and app builds, social media automation, and Web3 protocol development.",
+        "inLanguage": "en",
+        "isPartOf": { "@id": "https://studioliq.com/#website" },
+        "about": { "@id": "https://studioliq.com/#org" },
+        "publisher": { "@id": "https://studioliq.com/#org" }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="nav on-dark">
+    <div class="wrap nav-in">
+      <a href="#top" class="brand" aria-label="Studio LIQ home">
+        <img class="brand-mark" src="/assets/brand/studioliq-mark.png" alt="" />
+        <span class="brand-name">Studio LIQ</span>
+        <span class="brand-sub">AI Native Builder Company</span>
+      </a>
+      <nav aria-label="Main menu">
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#cases">Portfolio</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#founder">Founder</a></li>
+        </ul>
+      </nav>
+      <a href="/" class="lang-switch" data-lang="ko" hreflang="ko" lang="ko" aria-label="한국어 버전">KO</a>
+      <a href="#contact" class="btn btn-pink btn-sm">Contact us</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" data-dark>
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <p class="eyebrow intro">Studio LIQ · AI Native Builder Company</p>
+          <h1 class="intro hero-en"><span class="ln">Building <br class="br-m" />AI-native products</span> <em class="ln">and onchain finance.</em></h1>
+          <p class="hero-sub intro">From AX, AI and IT consulting to a shipped product, one team sees it through.</p>
+          <div class="hero-cta intro">
+            <a href="#contact" class="btn btn-pink">Get in touch</a>
+            <a href="#services" class="btn btn-line">See what we do</a>
+          </div>
+        </div>
+        <div class="geo" aria-hidden="true">
+          <span class="tile arc line" style="--i:0"></span>
+          <span class="tile circle fill pink" style="--i:1"></span>
+          <span class="tile lines" style="--i:2"></span>
+          <span class="tile half line" style="--i:3"></span>
+          <span class="tile square line" style="--i:4"></span>
+          <span class="tile tri fill" style="--i:5"></span>
+          <span class="tile arc fill pink" style="--i:6"></span>
+          <span class="tile circle line" style="--i:7"></span>
+          <span class="tile half fill" style="--i:8"></span>
+          <span class="tile dots" style="--i:9"></span>
+          <span class="tile circle line pink spin" style="--i:10"></span>
+          <span class="tile plus" style="--i:11"></span>
+          <span class="tile lines" style="--i:12"></span>
+          <span class="tile circle line sm" style="--i:13"></span>
+          <span class="tile half fill pink" style="--i:14"></span>
+          <span class="tile arc line" style="--i:15"></span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Clients -->
+    <section class="clients wrap reveal" aria-label="Clients and partners">
+      <p class="clients-label">Clients &amp; Partners</p>
+      <ul class="logos">
+        <li>
+          <a href="https://stabled.ai/" target="_blank" rel="noopener" aria-label="stabled">
+            <span class="logo-stabled" aria-hidden="true">
+              <svg viewBox="0 0 20 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 3h16M2 8h16M2 13h16"/></svg>
+              stabled
+            </span>
+          </a>
+        </li>
+        <li><a href="https://bryn.finance/" target="_blank" rel="noopener" aria-label="Bryn"><span class="logo-bryn" aria-hidden="true">BRYN</span></a></li>
+        <li><a href="https://prime.blackboard.fi/login" target="_blank" rel="noopener"><img src="/assets/clients/blackboard.svg" alt="Blackboard" class="logo-img logo-blackboard" /></a></li>
+        <li><a href="https://4pillars.io/en" target="_blank" rel="noopener"><img src="/assets/clients/fourpillars.svg" alt="Four Pillars" class="logo-img logo-fourpillars" /></a></li>
+        <li><a href="https://www.sqzr.team/" target="_blank" rel="noopener"><img src="/assets/clients/sqzr.png" alt="SquareZero" class="logo-img logo-sqzr" /></a></li>
+        <li><a href="https://3kingdoms.io/" target="_blank" rel="noopener"><img src="/assets/clients/k3k.png" alt="K-3Kingdoms" class="logo-img logo-k3k" /></a></li>
+        <li><a href="https://3kingdoms.io/" target="_blank" rel="noopener"><img src="/assets/clients/mega.png" alt="MEGA corporation" class="logo-img logo-mega" /></a></li>
+        <li>
+          <a href="https://blog.naver.com/py_math" target="_blank" rel="noopener" aria-label="Pilyeon Math Academy">
+            <span class="logo-pilyeon" aria-hidden="true"><img src="/assets/clients/pilyeon.png" alt="" />필연수학학원</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Services</p>
+          <h2>What we do</h2>
+        </header>
+
+        <ul class="svc-grid reveal">
+          <li id="s-ax" class="svc"><span class="svc-num">01</span><h3>AX Consulting</h3><p>We redesign how your team works, with AI.</p><small>Process&nbsp;audit&nbsp;· Roadmap&nbsp;· Automation&nbsp;PoC</small></li>
+          <li id="s-ai" class="svc"><span class="svc-num">02</span><h3>AI Consulting</h3><p>We build AI that does real work.</p><small>Model&nbsp;selection&nbsp;· Agents&nbsp;· RAG</small></li>
+          <li id="s-it" class="svc"><span class="svc-num">03</span><h3>IT Consulting</h3><p>We fix the systems that slow your business down.</p><small>Architecture&nbsp;· Legacy&nbsp;· Infrastructure</small></li>
+          <li id="s-build" class="svc"><span class="svc-num">04</span><h3>Build</h3><p>We take web apps, mobile apps and internal tools all the way to launch.</p><small>Products&nbsp;· Back&nbsp;office&nbsp;· MVP</small></li>
+          <li id="s-sns" class="svc"><span class="svc-num">05</span><h3>Social Media Automation</h3><p>We automate content, from production to publishing.</p><small>Production&nbsp;· Publishing&nbsp;· Reporting</small></li>
+          <li id="s-web3" class="svc"><span class="svc-num">06</span><h3>Web3</h3><p>We build onchain protocols.</p><small>DeFi&nbsp;· Smart&nbsp;contracts&nbsp;· Trading</small></li>
+          <li id="s-cto" class="svc"><span class="svc-num">07</span><h3>Fractional CTO</h3><p>We make technical decisions with you, month by month.</p><small>Due&nbsp;diligence&nbsp;· Hiring&nbsp;· Vendor&nbsp;management</small></li>
+          <li class="svc svc-cta"><a href="#contact"><span class="svc-num">+</span><h3>Something else</h3><p>Not on the list? Ask us anyway.</p><small>Get in touch →</small></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- When to call -->
+    <section class="section section-ink">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">When to Call</p>
+          <h2>Call us when</h2>
+        </header>
+        <ul class="cases-grid">
+          <li class="reveal"><span>01</span><p>You want to bring in AI but don't know where to start</p></li>
+          <li class="reveal"><span>02</span><p>You need to ship a product without an engineering team</p></li>
+          <li class="reveal"><span>03</span><p>An outsourced project has stalled halfway</p></li>
+          <li class="reveal"><span>04</span><p>Your social channels need more hands than you have</p></li>
+          <li class="reveal"><span>05</span><p>You need technical due diligence before an investment</p></li>
+          <li class="reveal"><span>06</span><p>An old system is overdue for replacement</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cases -->
+    <section id="cases" class="section section-gray">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Selected work</h2>
+        </header>
+
+        <div class="matters" role="table" aria-label="Portfolio">
+          <div class="matter matter-head" role="row">
+            <span role="columnheader">Client</span>
+            <span role="columnheader">Industry</span>
+            <span role="columnheader">Scope</span>
+            <span role="columnheader">Services</span>
+          </div>
+          <a class="matter reveal" role="row" href="https://bryn.finance/" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="/assets/clients/icons/bryn.png" alt="" />Bryn Finance</span>
+            <span class="m-sector" role="cell">Crypto · DeFi</span>
+            <span class="m-desc" role="cell">Led DeFi protocol design · CDP and DEX development</span>
+            <span class="m-tags" role="cell">Web3 · Build</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://stabled.ai/" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="/assets/clients/icons/stabled.svg" alt="" />stabled</span>
+            <span class="m-sector" role="cell">Crypto · Fintech</span>
+            <span class="m-desc" role="cell">Stablecoin issuance and settlement infrastructure, plus an AML solution</span>
+            <span class="m-tags" role="cell">Web3 · Build · AML</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://prime.blackboard.fi/login" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="/assets/clients/icons/blackboard.png" alt="" />Blackboard Prime</span>
+            <span class="m-sector" role="cell">Crypto · Asset management</span>
+            <span class="m-desc" role="cell">Non-custodial digital asset management platform for institutions</span>
+            <span class="m-tags" role="cell">Build · Crypto</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://3kingdoms.io/" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="/assets/clients/icons/k3k.png" alt="" />K-3Kingdoms</span>
+            <span class="m-sector" role="cell">Gaming · Crypto</span>
+            <span class="m-desc" role="cell">DeFi, NFT and DEX development (operated by MEGA corporation)</span>
+            <span class="m-tags" role="cell">Web3 · Build</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://4pillars.io/en" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="/assets/clients/icons/fourpillars.png" alt="" />Four Pillars</span>
+            <span class="m-sector" role="cell">Research · Advisory</span>
+            <span class="m-desc" role="cell">Official website</span>
+            <span class="m-tags" role="cell">Build</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://www.sqzr.team/" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="/assets/clients/icons/sqzr.png" alt="" />SquareZero</span>
+            <span class="m-sector" role="cell">AI · Construction engineering</span>
+            <span class="m-desc" role="cell">BIM workflow automation · AI adoption</span>
+            <span class="m-tags" role="cell">AX · AI</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://blog.naver.com/py_math" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="/assets/clients/icons/pilyeon.png" alt="" />Pilyeon Math Academy</span>
+            <span class="m-sector" role="cell">Education</span>
+            <span class="m-desc" role="cell">Moved academy operations and student progress tracking onto AI</span>
+            <span class="m-tags" role="cell">AX</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Our Products</p>
+          <h2>We build and run our own products</h2>
+        </header>
+
+        <ul class="products">
+          <li class="product product-wip reveal">
+            <div aria-disabled="true">
+              <span class="p-logo p-mono" aria-hidden="true">박</span>
+              <span class="p-cat">AI agent</span>
+              <h3>Park Siljang</h3>
+              <p>An AI staff member for tax firms. From document intake to drafting and checking returns.</p>
+              <span class="p-status">In Build</span>
+            </div>
+          </li>
+          <li class="product reveal">
+            <a href="https://www.scuttlerlabs.com" target="_blank" rel="noopener">
+              <img class="p-logo" src="/assets/logos/scuttler.svg" alt="" />
+              <span class="p-cat">Esports data</span>
+              <h3>ScuttlerLabs</h3>
+              <p>Match data analysis for professional esports teams</p>
+              <span class="p-link">scuttlerlabs.com</span>
+            </a>
+          </li>
+          <li class="product reveal">
+            <a href="https://www.aivynetwork.com" target="_blank" rel="noopener">
+              <img class="p-logo" src="/assets/logos/aivy.png" alt="" />
+              <span class="p-cat">Knowledge content MCN</span>
+              <h3>AIVY Network</h3>
+              <p>A knowledge content network of 18 channels across 6 fields</p>
+              <span class="p-link">aivynetwork.com</span>
+            </a>
+          </li>
+          <li class="product reveal">
+            <a href="https://yabba.fun" target="_blank" rel="noopener">
+              <img class="p-logo" src="/assets/logos/yabba.png" alt="" />
+              <span class="p-cat">Baseball data</span>
+              <h3>Yabba</h3>
+              <p>KBO baseball, told through the numbers</p>
+              <span class="p-link">yabba.fun</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Founder -->
+    <section id="founder" class="section section-gray">
+      <div class="wrap founder">
+        <div class="founder-id reveal">
+          <p class="eyebrow">Founder</p>
+          <h2>Incheol Yang <span>CEO</span></h2>
+          <p class="founder-bio">Started as an engineer at a crypto exchange and a game company,<br class="br-pc" /> then founded one Web3 company after another.</p>
+          <p class="founder-edu">KAIST School of Computing · Korea Science Academy of KAIST</p>
+          <a class="founder-in" href="https://www.linkedin.com/in/inchyangv" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+        <ol class="career reveal">
+          <li><a href="https://www.magni.finance/" target="_blank" rel="noopener"><img src="/assets/logos/magni-dark.svg" alt="" /><strong>Magni Finance</strong><span>CEO · Founder</span><time>2025–26</time></a></li>
+          <li><a href="https://www.linkedin.com/company/99193695" target="_blank" rel="noopener"><img src="/assets/logos/finblock.png" alt="" /><strong>Finblock Labs</strong><span>CEO · Founder</span><time>2023–25</time></a></li>
+          <li><a href="https://baekdutech.com/" target="_blank" rel="noopener"><img src="/assets/logos/baekdu-t.png" alt="" /><strong>Baekdu Technologies</strong><span>Co-founder · Tech Lead</span><time>2020–23</time></a></li>
+          <li><a href="https://www.pubg.com/" target="_blank" rel="noopener"><img src="/assets/logos/pubg-t.png" alt="" /><strong>PUBG</strong><span>Backend Engineer</span><time>2019–20</time></a></li>
+          <li><a href="https://coinone.co.kr/" target="_blank" rel="noopener"><img src="/assets/logos/coinone-t.png" alt="" /><strong>Coinone</strong><span>Software Engineer</span><time>2018–19</time></a></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="wrap contact-in">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Whatever the problem,<br />talk to us first.</h2>
+          <p>We reply within one business day.</p>
+          <a class="btn btn-pink" href="mailto:contact@studioliq.com">Email us</a>
+        </div>
+        <dl class="office reveal">
+          <div><dt>Email</dt><dd><a href="mailto:contact@studioliq.com">contact@studioliq.com</a></dd></div>
+          <div><dt>Address</dt><dd>A3101-CS110, 323 <span class="nw">Incheon Tower-daero</span>,<br class="br-pc" /> Yeonsu-gu, Incheon, Republic of Korea</dd></div>
+          <div><dt>Business Reg. No.</dt><dd>853-11-02183</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <a href="#top" class="brand">
+          <img class="brand-mark" src="/assets/brand/studioliq-mark.png" alt="" />
+          <span class="brand-name">Studio LIQ</span>
+          <span class="brand-sub">AI Native Builder Company</span>
+        </a>
+        <ul class="footer-nav">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#cases">Portfolio</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#founder">Founder</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <span>Studio LIQ (스튜디오 엘아이큐)</span>
+        <span>CEO Incheol Yang</span>
+        <span>Business Reg. No. 853-11-02183</span>
+        <span>A3101-CS110, 323 <span class="nw">Incheon Tower-daero</span>, Yeonsu-gu, Incheon, Republic of Korea</span>
+        <span>contact@studioliq.com</span>
+      </div>
+      <p class="footer-copy">© <span id="year">2026</span> Studio LIQ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/main.js" defer></script>
+</body>
+</html>

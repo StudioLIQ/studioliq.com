@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Language routing: Korea (Asia/Seoul timezone or Korean browser) -> /, everyone else -> /en/ -->
+  <script>
+    (function () {
+      if (/bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(navigator.userAgent)) return;
+      var page = document.documentElement.lang === "ko" ? "ko" : "en", want;
+      try { want = localStorage.getItem("lang"); } catch (e) {}
+      if (want !== "ko" && want !== "en") {
+        var tz = "";
+        try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) {}
+        var first = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+        want = tz === "Asia/Seoul" || /^ko\b/i.test(first) ? "ko" : "en";
+      }
+      if (want !== page) location.replace((want === "ko" ? "/" : "/en/") + location.hash);
+    })();
+  </script>
+  <title>Studio LIQ · AI Native Builder Company | AX · AI · IT 컨설팅과 구축</title>
+  <meta name="description" content="Studio LIQ(스튜디오 엘아이큐)는 AX·AI·IT 컨설팅부터 웹·앱 구축, SNS 자동화, Web3·가상자산 프로토콜 개발까지 한 팀이 끝까지 책임지는 AI 네이티브 빌더 컴퍼니입니다." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://studioliq.com/" />
+  <link rel="alternate" hreflang="ko" href="https://studioliq.com/" />
+  <link rel="alternate" hreflang="en" href="https://studioliq.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://studioliq.com/en/" />
+  <meta name="author" content="Studio LIQ" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Studio LIQ" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:url" content="https://studioliq.com/" />
+  <meta property="og:title" content="Studio LIQ · Building AI-native products and onchain finance" />
+  <meta property="og:description" content="AX · AI · IT 컨설팅부터 제품 구축까지, 한 팀이 끝까지 책임지는 AI 네이티브 빌더 컴퍼니." />
+  <meta property="og:image" content="https://studioliq.com/assets/brand/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Studio LIQ · Building AI-native products and onchain finance" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Studio LIQ · Building AI-native products and onchain finance" />
+  <meta name="twitter:description" content="AX · AI · IT 컨설팅부터 제품 구축까지, 한 팀이 끝까지 책임지는 AI 네이티브 빌더 컴퍼니." />
+  <meta name="twitter:image" content="https://studioliq.com/assets/brand/og-image.png" />
+
+  <link rel="icon" href="assets/brand/studioliq-logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/brand/studioliq-logo.png" />
+  <link rel="alternate" type="text/plain" title="LLM summary" href="/llms.txt" />
+
+  <!-- Google Analytics 4 (studioliq.com only) -->
+  <script>
+    window.GA_ID = "G-ZWL77X18QN";
+    (function () {
+      var id = window.GA_ID;
+      if (!/^G-[A-Z0-9]{6,}$/.test(id) || id === "G-XXXXXXXXXX") return;
+      if (!/(^|\.)studioliq\.com$/.test(location.hostname)) return; // production only
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag("js", new Date());
+      gtag("config", id, { anonymize_ip: true });
+    })();
+  </script>
+
+  <!-- Structured data (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://studioliq.com/#org",
+        "name": "Studio LIQ",
+        "alternateName": ["스튜디오 엘아이큐", "StudioLIQ"],
+        "url": "https://studioliq.com/",
+        "logo": "https://studioliq.com/assets/brand/studioliq-logo.png",
+        "image": "https://studioliq.com/assets/brand/og-image.png",
+        "slogan": "Building AI-native products and onchain finance",
+        "description": "AX·AI·IT 컨설팅부터 웹·앱 구축, SNS 자동화, Web3·가상자산 프로토콜 개발까지 한 팀이 끝까지 책임지는 AI 네이티브 빌더 컴퍼니.",
+        "email": "contact@studioliq.com",
+        "identifier": { "@type": "PropertyValue", "name": "사업자등록번호", "value": "853-11-02183" },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "인천타워대로 323 A3101-CS110호",
+          "addressLocality": "연수구",
+          "addressRegion": "인천광역시",
+          "addressCountry": "KR"
+        },
+        "areaServed": ["KR", "Worldwide"],
+        "founder": { "@id": "https://studioliq.com/#founder" },
+        "knowsAbout": ["AI Transformation (AX)", "AI consulting", "LLM agents", "RAG", "IT consulting", "Software architecture", "Web and app development", "SNS automation", "DeFi", "Stablecoin", "AML", "DEX", "CDP", "NFT", "Smart contracts", "Trading systems", "Fractional CTO"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "업무 분야",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AX 컨설팅", "description": "AI로 일하는 방식을 다시 설계합니다. 업무 진단, 로드맵, 자동화 PoC." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI 컨설팅", "description": "실제 업무에 바로 쓰는 AI를 만듭니다. 모델 선정, 에이전트, RAG." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IT 컨설팅", "description": "사업 속도를 늦추는 구조를 바로잡습니다. 아키텍처, 레거시, 인프라." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "빌딩 (제품 구축)", "description": "웹, 앱, 내부 시스템을 출시까지 만듭니다." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SNS 자동화", "description": "콘텐츠 제작부터 배포까지 자동화합니다." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web3 · 가상자산", "description": "온체인 프로토콜을 구축합니다. DeFi, 컨트랙트, 트레이딩." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "기술 자문 · Fractional CTO", "description": "기술 의사결정을 월 단위로 함께합니다. 실사, 채용, 외주 관리." } }
+          ]
+        },
+        "brand": [
+          { "@type": "Brand", "name": "박실장", "description": "세무사 사무실을 돕는 AI 직원. 자료 수령부터 신고서 작성, 검산까지. (개발 중)" },
+          { "@type": "Brand", "name": "ScuttlerLabs", "url": "https://www.scuttlerlabs.com", "description": "프로 e스포츠 구단 맞춤형 경기 데이터 분석." },
+          { "@type": "Brand", "name": "AIVY Network", "url": "https://www.aivynetwork.com", "description": "6개 분야 18개 채널을 운영하는 지식 콘텐츠 네트워크." },
+          { "@type": "Brand", "name": "Yabba", "url": "https://yabba.fun", "description": "KBO 리그 기록을 숫자로 읽는 야구 데이터 서비스." }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://studioliq.com/#founder",
+        "name": "양인철",
+        "alternateName": "Incheol Yang",
+        "jobTitle": "CEO",
+        "worksFor": { "@id": "https://studioliq.com/#org" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "KAIST" },
+          { "@type": "HighSchool", "name": "한국과학영재학교" }
+        ],
+        "sameAs": ["https://www.linkedin.com/in/inchyangv"]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://studioliq.com/#portfolio",
+        "name": "Studio LIQ 포트폴리오",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Bryn Finance", "url": "https://bryn.finance/", "description": "DeFi 프로토콜 설계 리드, CDP, DEX 개발" },
+          { "@type": "ListItem", "position": 2, "name": "stabled", "url": "https://stabled.ai/", "description": "스테이블코인 발행·정산 인프라 및 AML 솔루션 구축" },
+          { "@type": "ListItem", "position": 3, "name": "Blackboard Prime", "url": "https://prime.blackboard.fi/login", "description": "기관 대상 비수탁형 가상자산 운용 플랫폼 구축" },
+          { "@type": "ListItem", "position": 4, "name": "K-3Kingdoms (MEGA corporation)", "url": "https://3kingdoms.io/", "description": "DeFi, NFT, DEX 개발" },
+          { "@type": "ListItem", "position": 5, "name": "Four Pillars", "url": "https://4pillars.io/en", "description": "공식 웹사이트 구축" },
+          { "@type": "ListItem", "position": 6, "name": "SquareZero", "url": "https://www.sqzr.team/", "description": "BIM 업무 자동화, AI 도입" },
+          { "@type": "ListItem", "position": 7, "name": "필연수학학원", "url": "https://blog.naver.com/py_math", "description": "학원 운영·학습 관리 AI 전환" }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://studioliq.com/#website",
+        "url": "https://studioliq.com/",
+        "name": "Studio LIQ",
+        "inLanguage": "ko-KR",
+        "publisher": { "@id": "https://studioliq.com/#org" }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav on-dark">
+    <div class="wrap nav-in">
+      <a href="#top" class="brand" aria-label="Studio LIQ 홈">
+        <img class="brand-mark" src="assets/brand/studioliq-mark.png" alt="" />
+        <span class="brand-name">Studio LIQ</span>
+        <span class="brand-sub">AI Native Builder Company</span>
+      </a>
+      <nav aria-label="주요 메뉴">
+        <ul class="nav-links">
+          <li><a href="#services">업무 분야</a></li>
+          <li><a href="#cases">포트폴리오</a></li>
+          <li><a href="#products">자체 서비스</a></li>
+          <li><a href="#founder">대표</a></li>
+        </ul>
+      </nav>
+      <a href="/en/" class="lang-switch" data-lang="en" hreflang="en" lang="en" aria-label="English version">EN</a>
+      <a href="#contact" class="btn btn-pink btn-sm">상담 요청</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" data-dark>
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <p class="eyebrow intro">Studio LIQ · AI Native Builder Company</p>
+          <h1 class="intro hero-en"><span class="ln">Building <br class="br-m" />AI-native products</span> <em class="ln">and onchain finance.</em></h1>
+          <p class="hero-sub intro">AX · AI · IT 컨설팅부터 제품 구축까지, 한 팀이 끝까지 책임집니다.</p>
+          <div class="hero-cta intro">
+            <a href="#contact" class="btn btn-pink">상담 요청하기</a>
+            <a href="#services" class="btn btn-line">업무 분야 보기</a>
+          </div>
+        </div>
+        <div class="geo" aria-hidden="true">
+          <span class="tile arc line" style="--i:0"></span>
+          <span class="tile circle fill pink" style="--i:1"></span>
+          <span class="tile lines" style="--i:2"></span>
+          <span class="tile half line" style="--i:3"></span>
+          <span class="tile square line" style="--i:4"></span>
+          <span class="tile tri fill" style="--i:5"></span>
+          <span class="tile arc fill pink" style="--i:6"></span>
+          <span class="tile circle line" style="--i:7"></span>
+          <span class="tile half fill" style="--i:8"></span>
+          <span class="tile dots" style="--i:9"></span>
+          <span class="tile circle line pink spin" style="--i:10"></span>
+          <span class="tile plus" style="--i:11"></span>
+          <span class="tile lines" style="--i:12"></span>
+          <span class="tile circle line sm" style="--i:13"></span>
+          <span class="tile half fill pink" style="--i:14"></span>
+          <span class="tile arc line" style="--i:15"></span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Clients -->
+    <section class="clients wrap reveal" aria-label="고객사 및 파트너">
+      <p class="clients-label">Clients &amp; Partners</p>
+      <ul class="logos">
+        <li>
+          <a href="https://stabled.ai/" target="_blank" rel="noopener" aria-label="stabled">
+            <span class="logo-stabled" aria-hidden="true">
+              <svg viewBox="0 0 20 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M2 3h16M2 8h16M2 13h16"/></svg>
+              stabled
+            </span>
+          </a>
+        </li>
+        <li><a href="https://bryn.finance/" target="_blank" rel="noopener" aria-label="Bryn"><span class="logo-bryn" aria-hidden="true">BRYN</span></a></li>
+        <li><a href="https://prime.blackboard.fi/login" target="_blank" rel="noopener"><img src="assets/clients/blackboard.svg" alt="Blackboard" class="logo-img logo-blackboard" /></a></li>
+        <li><a href="https://4pillars.io/en" target="_blank" rel="noopener"><img src="assets/clients/fourpillars.svg" alt="Four Pillars" class="logo-img logo-fourpillars" /></a></li>
+        <li><a href="https://www.sqzr.team/" target="_blank" rel="noopener"><img src="assets/clients/sqzr.png" alt="SquareZero" class="logo-img logo-sqzr" /></a></li>
+        <li><a href="https://3kingdoms.io/" target="_blank" rel="noopener"><img src="assets/clients/k3k.png" alt="K-3Kingdoms" class="logo-img logo-k3k" /></a></li>
+        <li><a href="https://3kingdoms.io/" target="_blank" rel="noopener"><img src="assets/clients/mega.png" alt="MEGA corporation" class="logo-img logo-mega" /></a></li>
+        <li>
+          <a href="https://blog.naver.com/py_math" target="_blank" rel="noopener" aria-label="필연수학학원">
+            <span class="logo-pilyeon" aria-hidden="true"><img src="assets/clients/pilyeon.png" alt="" />필연수학학원</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Services</p>
+          <h2>업무 분야</h2>
+        </header>
+
+        <ul class="svc-grid reveal">
+          <li id="s-ax" class="svc"><span class="svc-num">01</span><h3>AX 컨설팅</h3><p>AI로 일하는 방식을 다시 설계합니다.</p><small>업무&nbsp;진단&nbsp;· 로드맵&nbsp;· 자동화&nbsp;PoC</small></li>
+          <li id="s-ai" class="svc"><span class="svc-num">02</span><h3>AI 컨설팅</h3><p>실제 업무에 바로 쓰는 AI를 만듭니다.</p><small>모델&nbsp;선정&nbsp;· 에이전트&nbsp;· RAG</small></li>
+          <li id="s-it" class="svc"><span class="svc-num">03</span><h3>IT 컨설팅</h3><p>사업 속도를 늦추는 구조를 바로잡습니다.</p><small>아키텍처&nbsp;· 레거시&nbsp;· 인프라</small></li>
+          <li id="s-build" class="svc"><span class="svc-num">04</span><h3>빌딩</h3><p>웹, 앱, 내부 시스템을 출시까지 만듭니다.</p><small>서비스&nbsp;· 백오피스&nbsp;· MVP</small></li>
+          <li id="s-sns" class="svc"><span class="svc-num">05</span><h3>SNS 자동화</h3><p>콘텐츠 제작부터 배포까지 자동화합니다.</p><small>제작&nbsp;· 배포&nbsp;· 리포팅</small></li>
+          <li id="s-web3" class="svc"><span class="svc-num">06</span><h3>Web3</h3><p>온체인 프로토콜을 구축합니다.</p><small>DeFi&nbsp;· 컨트랙트&nbsp;· 트레이딩</small></li>
+          <li id="s-cto" class="svc"><span class="svc-num">07</span><h3>기술 자문 · CTO</h3><p>기술 의사결정을 월 단위로 함께합니다.</p><small>실사&nbsp;· 채용&nbsp;· 외주&nbsp;관리</small></li>
+          <li class="svc svc-cta"><a href="#contact"><span class="svc-num">+</span><h3>그 밖의 일</h3><p>목록에 없는 기술 과제도 먼저 상의하세요.</p><small>상담 요청 →</small></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- When to call -->
+    <section class="section section-ink">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">When to Call</p>
+          <h2>이럴 때 찾아주세요</h2>
+        </header>
+        <ul class="cases-grid">
+          <li class="reveal"><span>01</span><p>AI 도입을 어디서부터 시작해야 할지 막막할 때</p></li>
+          <li class="reveal"><span>02</span><p>사내 개발 조직 없이 서비스를 만들어야 할 때</p></li>
+          <li class="reveal"><span>03</span><p>외주 개발 프로젝트가 중간에 멈췄을 때</p></li>
+          <li class="reveal"><span>04</span><p>SNS 채널 운영 업무가 인력 한계를 넘어섰을 때</p></li>
+          <li class="reveal"><span>05</span><p>투자를 앞두고 기술 실사가 필요할 때</p></li>
+          <li class="reveal"><span>06</span><p>오래된 시스템을 새로 바꿔야 할 때</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cases -->
+    <section id="cases" class="section section-gray">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2>포트폴리오</h2>
+        </header>
+
+        <div class="matters" role="table" aria-label="포트폴리오 목록">
+          <div class="matter matter-head" role="row">
+            <span role="columnheader">고객사</span>
+            <span role="columnheader">산업</span>
+            <span role="columnheader">수행 내용</span>
+            <span role="columnheader">업무 분야</span>
+          </div>
+          <a class="matter reveal" role="row" href="https://bryn.finance/" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="assets/clients/icons/bryn.png" alt="" />Bryn Finance</span>
+            <span class="m-sector" role="cell">가상자산 · DeFi</span>
+            <span class="m-desc" role="cell">DeFi 프로토콜 설계 리드 · CDP · DEX 개발</span>
+            <span class="m-tags" role="cell">Web3 · 빌딩</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://stabled.ai/" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="assets/clients/icons/stabled.svg" alt="" />stabled</span>
+            <span class="m-sector" role="cell">가상자산 · 핀테크</span>
+            <span class="m-desc" role="cell">스테이블코인 발행 · 정산 인프라 및 AML 솔루션 구축</span>
+            <span class="m-tags" role="cell">Web3 · 빌딩 · AML</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://prime.blackboard.fi/login" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="assets/clients/icons/blackboard.png" alt="" />Blackboard Prime</span>
+            <span class="m-sector" role="cell">가상자산 · 자산운용</span>
+            <span class="m-desc" role="cell">기관 대상 비수탁형 가상자산 운용 플랫폼 구축</span>
+            <span class="m-tags" role="cell">빌딩 · 가상자산</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://3kingdoms.io/" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="assets/clients/icons/k3k.png" alt="" />K-3Kingdoms</span>
+            <span class="m-sector" role="cell">게임 · 가상자산</span>
+            <span class="m-desc" role="cell">DeFi · NFT · DEX 개발 (운영사 MEGA corporation)</span>
+            <span class="m-tags" role="cell">Web3 · 빌딩</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://4pillars.io/en" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="assets/clients/icons/fourpillars.png" alt="" />Four Pillars</span>
+            <span class="m-sector" role="cell">리서치 · 자문 기관</span>
+            <span class="m-desc" role="cell">공식 웹사이트 구축</span>
+            <span class="m-tags" role="cell">빌딩</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://www.sqzr.team/" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="assets/clients/icons/sqzr.png" alt="" />SquareZero</span>
+            <span class="m-sector" role="cell">AI · 건설 엔지니어링</span>
+            <span class="m-desc" role="cell">BIM 업무 자동화 · AI 도입</span>
+            <span class="m-tags" role="cell">AX · AI</span>
+          </a>
+          <a class="matter reveal" role="row" href="https://blog.naver.com/py_math" target="_blank" rel="noopener">
+            <span class="m-client" role="cell"><img class="m-logo" src="assets/clients/icons/pilyeon.png" alt="" />필연수학학원</span>
+            <span class="m-sector" role="cell">교육</span>
+            <span class="m-desc" role="cell">학원 운영 · 학습 관리 AI 전환</span>
+            <span class="m-tags" role="cell">AX</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Our Products</p>
+          <h2>직접 만들고 운영합니다</h2>
+        </header>
+
+        <ul class="products">
+          <li class="product product-wip reveal">
+            <div aria-disabled="true">
+              <span class="p-logo p-mono" aria-hidden="true">박</span>
+              <span class="p-cat">AI 에이전트</span>
+              <h3>박실장</h3>
+              <p>세무사 사무실을 돕는 AI 직원. 자료 수령부터 신고서 작성, 검산까지</p>
+              <span class="p-status">In Build</span>
+            </div>
+          </li>
+          <li class="product reveal">
+            <a href="https://www.scuttlerlabs.com" target="_blank" rel="noopener">
+              <img class="p-logo" src="assets/logos/scuttler.svg" alt="" />
+              <span class="p-cat">e스포츠 데이터</span>
+              <h3>ScuttlerLabs</h3>
+              <p>프로 e스포츠 구단 맞춤형 경기 데이터 분석</p>
+              <span class="p-link">scuttlerlabs.com</span>
+            </a>
+          </li>
+          <li class="product reveal">
+            <a href="https://www.aivynetwork.com" target="_blank" rel="noopener">
+              <img class="p-logo" src="assets/logos/aivy.png" alt="" />
+              <span class="p-cat">지식 콘텐츠 MCN</span>
+              <h3>AIVY Network</h3>
+              <p>6개 분야 18개 채널을 운영하는 지식 콘텐츠 네트워크</p>
+              <span class="p-link">aivynetwork.com</span>
+            </a>
+          </li>
+          <li class="product reveal">
+            <a href="https://yabba.fun" target="_blank" rel="noopener">
+              <img class="p-logo" src="assets/logos/yabba.png" alt="" />
+              <span class="p-cat">야구 데이터</span>
+              <h3>Yabba</h3>
+              <p>KBO 리그 기록을 숫자로 읽는 야구 데이터 서비스</p>
+              <span class="p-link">yabba.fun</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Founder -->
+    <section id="founder" class="section section-gray">
+      <div class="wrap founder">
+        <div class="founder-id reveal">
+          <p class="eyebrow">Founder</p>
+          <h2>양인철 <span>대표</span></h2>
+          <p class="founder-bio">거래소와 게임 플랫폼 엔지니어를 거쳐<br class="br-pc" /> Web3 기업을 연이어 창업했습니다.</p>
+          <p class="founder-edu">KAIST 전산학부 · 한국과학영재학교</p>
+          <a class="founder-in" href="https://www.linkedin.com/in/inchyangv" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+        <ol class="career reveal">
+          <li><a href="https://www.magni.finance/" target="_blank" rel="noopener"><img src="assets/logos/magni-dark.svg" alt="" /><strong>Magni Finance</strong><span>CEO · Founder</span><time>2025–26</time></a></li>
+          <li><a href="https://www.linkedin.com/company/99193695" target="_blank" rel="noopener"><img src="assets/logos/finblock.png" alt="" /><strong>Finblock Labs</strong><span>CEO · Founder</span><time>2023–25</time></a></li>
+          <li><a href="https://baekdutech.com/" target="_blank" rel="noopener"><img src="assets/logos/baekdu-t.png" alt="" /><strong>Baekdu Technologies</strong><span>Co-founder · Tech Lead</span><time>2020–23</time></a></li>
+          <li><a href="https://www.pubg.com/" target="_blank" rel="noopener"><img src="assets/logos/pubg-t.png" alt="" /><strong>PUBG</strong><span>Backend Engineer</span><time>2019–20</time></a></li>
+          <li><a href="https://coinone.co.kr/" target="_blank" rel="noopener"><img src="assets/logos/coinone-t.png" alt="" /><strong>Coinone</strong><span>Software Engineer</span><time>2018–19</time></a></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="wrap contact-in">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>어떤 문제든,<br />먼저 상의하세요.</h2>
+          <p>영업일 기준 24시간 안에 회신드립니다.</p>
+          <a class="btn btn-pink" href="mailto:contact@studioliq.com">이메일로 문의하기</a>
+        </div>
+        <dl class="office reveal">
+          <div><dt>이메일</dt><dd><a href="mailto:contact@studioliq.com">contact@studioliq.com</a></dd></div>
+          <div><dt>주소</dt><dd>인천광역시 연수구 인천타워대로 323<br />A3101-CS110호</dd></div>
+          <div><dt>사업자등록번호</dt><dd>853-11-02183</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <a href="#top" class="brand">
+          <img class="brand-mark" src="assets/brand/studioliq-mark.png" alt="" />
+        <span class="brand-name">Studio LIQ</span>
+          <span class="brand-sub">AI Native Builder Company</span>
+        </a>
+        <ul class="footer-nav">
+          <li><a href="#services">업무 분야</a></li>
+          <li><a href="#cases">포트폴리오</a></li>
+          <li><a href="#products">자체 서비스</a></li>
+          <li><a href="#founder">대표</a></li>
+          <li><a href="#contact">문의</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <span>상호 스튜디오 엘아이큐</span>
+        <span>대표 양인철</span>
+        <span>사업자등록번호 853-11-02183</span>
+        <span>인천광역시 연수구 인천타워대로 323 A3101-CS110호</span>
+        <span>contact@studioliq.com</span>
+      </div>
+      <p class="footer-copy">© <span id="year">2026</span> Studio LIQ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+# Studio LIQ (스튜디오 엘아이큐)
+
+> AI Native Builder Company. Building AI-native products and onchain finance.
+> Studio LIQ는 AX · AI · IT 컨설팅부터 제품 구축까지 한 팀이 끝까지 책임지는 AI 네이티브 빌더 컴퍼니입니다.
+
+- Website: https://studioliq.com/ (Korean), https://studioliq.com/en/ (English)
+- Contact: contact@studioliq.com
+- Address: 인천광역시 연수구 인천타워대로 323 A3101-CS110호, Republic of Korea
+- Business registration no.: 853-11-02183
+- Founder & CEO: 양인철 (Incheol Yang) · https://www.linkedin.com/in/inchyangv
+
+## Services
+- AX 컨설팅 (AI Transformation): 업무 진단, AX 로드맵, 자동화 PoC
+- AI 컨설팅: 모델·벤더 선정, LLM 에이전트, RAG, 품질 평가
+- IT 컨설팅: 아키텍처 리뷰, 레거시 현대화, 클라우드·인프라
+- 빌딩 (Product build): 웹·앱 서비스, 내부 시스템·백오피스, MVP 출시
+- SNS 자동화: 콘텐츠 제작 파이프라인, 멀티 채널 배포, 성과 리포팅
+- Web3 · 가상자산: 스마트 컨트랙트, DeFi 프로토콜, 트레이딩 시스템
+- 기술 자문 · Fractional CTO: 기술 실사, 개발 조직 채용, 외주 관리
+
+## Portfolio
+- Bryn Finance (https://bryn.finance/): DeFi 프로토콜 설계 리드, CDP · DEX 개발
+- stabled (https://stabled.ai/): 스테이블코인 발행·정산 인프라 및 AML 솔루션 구축
+- Blackboard Prime (https://prime.blackboard.fi/login): 기관 대상 비수탁형 가상자산 운용 플랫폼 구축
+- K-3Kingdoms / MEGA corporation (https://3kingdoms.io/): DeFi · NFT · DEX 개발
+- Four Pillars (https://4pillars.io/en): 공식 웹사이트 구축
+- SquareZero (https://www.sqzr.team/): BIM 업무 자동화 · AI 도입
+- 필연수학학원: 학원 운영·학습 관리 AI 전환
+
+## Products operated by Studio LIQ
+- 박실장 (In Build, 개발 중): 세무사 사무실을 돕는 AI 직원 · 자료 수령부터 신고서 작성, 검산까지
+- ScuttlerLabs (https://www.scuttlerlabs.com): 프로 e스포츠 구단 맞춤형 경기 데이터 분석
+- AIVY Network (https://www.aivynetwork.com): 6개 분야 18개 채널을 운영하는 지식 콘텐츠 네트워크
+- Yabba (https://yabba.fun): KBO 리그 기록을 숫자로 읽는 야구 데이터 서비스
+
+## Founder career
+- Magni Finance — CEO · Founder (2025–2026)
+- Finblock Labs — CEO · Founder (2023–2025)
+- Baekdu Technologies — Co-founder · Tech Lead (2020–2023)
+- PUBG Corporation — Backend Engineer (2019–2020)
+- Coinone — Software Engineer (2018–2019)
+- Education: KAIST 전산학부, 한국과학영재학교

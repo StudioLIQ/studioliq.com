@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 40 40">
+  <title>ScuttlerLabs</title>
+  <!-- BI v5 다크 파비콘(public/brand/scuttler-favicon-32-dark.svg)을 형태 그대로 다크 타일 위에 얹었다 -->
+  <rect x="-4" y="-4" width="40" height="40" rx="8" fill="#0e1014" />
+  <path fill="#4f80ed" d="M8 20L10 22L5 25L3 29L1 29L3 23Z M11 23L13 24L9 27L8 31L6 31L7 26Z M24 20L22 22L27 25L29 29L31 29L29 23Z M21 23L19 24L23 27L24 31L26 31L25 26Z" /><path fill="#4f80ed" d="M16 1Q17.5 1 22 5Q24 7 24 9Q27 10 28 14Q30 16 30 18Q30 20 27 21L24 24Q22 25 20 25Q18 28 16 28Q14 28 12 25Q10 25 8 24L5 21Q2 20 2 18Q2 16 4 14Q5 10 8 9Q8 7 10 5Q14.5 1 16 1Z" /><path fill="#93b3ff" d="M16 1Q18 1.4 22 5Q24 7 22 8Q20 9 16 7.5Q13 6.3 10 7Q9 6 13 3Z M12 9Q15 8 19 10L25 12Q28 13 25 15Q18 19 14 18Q8 17 5 14Q4 12 12 9Z" /><path fill="#d4e1ff" d="M12 23Q10 19 7 18L8 16Q13 19 14 23Z M20 23Q22 19 25 18L24 16Q19 19 18 23Z" /><path fill="#0e1014" d="M12 23H14V25H12Z M18 23H20V25H18Z" /><path fill="#4f80ed" d="M12 27Q14 28 14 30L12 29L11 30L12 31Q8 31 9 28Z M20 27Q18 28 18 30L20 29L21 30L20 31Q24 31 23 28Z" />
+</svg>
